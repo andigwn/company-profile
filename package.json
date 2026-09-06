@@ -6,12 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:staging": "NEXT_PUBLIC_ENV=staging next build",
+    "build:prod": "NEXT_PUBLIC_ENV=production next build",
+    "start:staging": "NEXT_PUBLIC_ENV=staging next start",
+    "start:prod": "NEXT_PUBLIC_ENV=production next start"
   },
   "dependencies": {
+    "framer-motion": "^13.2.0",
     "next": "16.3.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
